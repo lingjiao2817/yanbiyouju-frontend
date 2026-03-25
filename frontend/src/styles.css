@@ -55,23 +55,23 @@ button {
   height: 100%;
   width: min(1420px, calc(100vw - 32px));
   margin: 0 auto;
-  padding: 24px 0 24px;
+  padding: 20px 0 20px;
   display: flex;
   flex-direction: column;
 }
 
-/* 头部 - 压缩高度版本 */
+/* 头部 - 进一步压缩，随滚动正常消失 */
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
-  gap: 20px;
-  margin-bottom: 20px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.75fr);
+  gap: 16px;
+  margin-bottom: 16px;
   flex-shrink: 0;
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: var(--shadow);
-  padding: 16px 20px;
+  padding: 10px 16px;
 }
 
 .hero-copy {
@@ -83,22 +83,25 @@ button {
 
 .hero-card {
   background: rgba(255, 255, 255, 0.5);
-  padding: 12px 20px;
+  padding: 6px 12px;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .hero-card p {
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .hero-card ul {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 16px;
 }
 
 .hero-card li {
-  font-size: 13px;
+  font-size: 11px;
+  line-height: 1.4;
 }
 
 .hero-card p,
@@ -120,14 +123,14 @@ button {
 .mini-label,
 .tag {
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 12px;
+  letter-spacing: 0.12em;
+  font-size: 11px;
 }
 
 .eyebrow,
 .section-kicker {
   color: var(--accent);
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
 h1,
@@ -140,15 +143,16 @@ h4 {
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 6px;
+  font-size: 20px;
+  margin-bottom: 2px;
   line-height: 1.2;
 }
 
 .hero-text {
-  font-size: 14px;
+  font-size: 12px;
   max-width: 54ch;
   margin: 0;
+  line-height: 1.4;
 }
 
 /* 主布局 - 固定高度 + 独立滚动 */
@@ -222,8 +226,9 @@ h1 {
 
 .primary-button,
 .ghost-button {
-  padding: 12px 18px;
+  padding: 10px 16px;
   border: 1px solid transparent;
+  font-size: 14px;
 }
 
 /* 主按钮 */
@@ -274,9 +279,10 @@ textarea {
   width: 100%;
   border: 1px solid rgba(115, 84, 58, 0.18);
   border-radius: 18px;
-  padding: 14px 16px;
+  padding: 12px 14px;
   background: rgba(255, 255, 255, 0.7);
   color: var(--text);
+  font-size: 14px;
 }
 
 textarea {
@@ -285,7 +291,7 @@ textarea {
 
 .hint {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 /* ========== 侧边栏样式 ========== */
@@ -311,7 +317,7 @@ textarea {
 
 /* ========== 历史记录样式 ========== */
 .history-list {
-  max-height: calc(100vh - 300px);
+  max-height: calc(100vh - 280px);
   overflow-y: auto;
   display: grid;
   gap: 8px;
@@ -321,10 +327,10 @@ textarea {
   display: block;
   width: 100%;
   text-align: left;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.76);
-  border-radius: 16px;
+  border-radius: 14px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -341,21 +347,22 @@ textarea {
 .history-title {
   display: block;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  font-size: 13px;
 }
 
 .history-meta {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .history-summary {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   color: #6b7280;
-  margin-top: 4px;
+  margin-top: 2px;
   line-height: 1.4;
   word-break: break-all;
 }
@@ -390,11 +397,11 @@ textarea {
 }
 
 .summary-card {
-  padding: 18px;
+  padding: 14px;
 }
 
 .summary-card strong {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
 }
 
@@ -407,7 +414,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 6px 0 10px;
+  margin: 6px 0 8px;
 }
 
 .content-grid {
@@ -421,11 +428,11 @@ textarea {
 }
 
 .subpanel {
-  padding: 18px;
+  padding: 16px;
 }
 
 .subpanel-head {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .flag-card,
@@ -433,11 +440,11 @@ textarea {
 .reference-card,
 .route-card,
 .comment-card {
-  padding: 16px;
+  padding: 14px;
 }
 
 .flag-card blockquote {
-  margin: 10px 0;
+  margin: 8px 0;
   padding-left: 12px;
   border-left: 3px solid rgba(159, 75, 47, 0.35);
   color: #5c4a3d;
@@ -445,7 +452,7 @@ textarea {
 
 .paragraph-text,
 .reference-line {
-  margin: 10px 0 8px;
+  margin: 8px 0 6px;
 }
 
 .reference-panel,
@@ -460,8 +467,8 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  padding: 6px 10px;
-  font-size: 12px;
+  padding: 4px 8px;
+  font-size: 11px;
   font-weight: 700;
 }
 
@@ -492,27 +499,28 @@ textarea {
 
 /* 错误提示样式 */
 .error-banner {
-  margin: 0 0 14px;
-  padding: 12px 14px;
-  border-radius: 14px;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
   background: rgba(180, 90, 60, 0.12);
   color: var(--warn);
   border-left: 3px solid var(--warn);
+  font-size: 13px;
 }
 
 /* 空状态提示样式 */
 .empty-state {
   text-align: center;
   color: #9ca3af;
-  padding: 32px;
-  font-size: 14px;
+  padding: 24px;
+  font-size: 13px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
 
 /* 字数统计样式 */
 .char-count {
-  font-size: 12px;
+  font-size: 11px;
   color: #6b7280;
   margin-top: 4px;
   text-align: right;
@@ -542,14 +550,14 @@ textarea {
 }
 
 .action-list li + li {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .comment-form {
   display: grid;
   gap: 10px;
-  margin-bottom: 18px;
-  padding: 16px;
+  margin-bottom: 16px;
+  padding: 14px;
   border: 1px dashed rgba(98, 71, 44, 0.22);
   border-radius: 18px;
   background: rgba(255, 250, 242, 0.7);
@@ -564,7 +572,7 @@ textarea {
 }
 
 .comment-time {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* 结果区独立滚动 */
@@ -578,14 +586,14 @@ textarea {
   position: fixed;
   right: 16px;
   bottom: 20px;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: linear-gradient(135deg, #9f4b2f, #c96b43);
   color: #fff;
   border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   z-index: 999;
   transition: all 0.2s ease;
@@ -610,19 +618,20 @@ textarea {
 @media (max-width: 768px) {
   .page-shell {
     height: auto;
-    padding: 16px;
+    padding: 12px;
   }
 
   .layout {
     flex-direction: column;
     height: auto;
-    gap: 16px;
+    gap: 12px;
   }
 
   .sidebar {
     width: 100%;
     overflow: visible;
     max-height: none;
+    padding: 16px;
   }
 
   .main-content {
@@ -631,33 +640,51 @@ textarea {
   }
 
   .hero {
-    margin-bottom: 16px;
-    padding: 12px 16px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    gap: 12px;
+  }
+
+  .hero-card {
+    padding: 4px 10px;
+  }
+
+  .hero-card p {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+
+  .hero-card li {
+    font-size: 10px;
   }
 
   .card,
   .hero-copy,
   .hero-card,
   .sidebar {
-    padding: 16px !important;
-    border-radius: 20px;
+    padding: 12px !important;
+    border-radius: 16px;
   }
 
   h1 {
-    font-size: 20px;
-  }
-
-  h2 {
     font-size: 18px;
   }
 
+  h2 {
+    font-size: 16px;
+  }
+
   .hero-text {
-    font-size: 13px;
+    font-size: 11px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
   }
 
   .editor-actions {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .editor-actions button,
@@ -665,33 +692,34 @@ textarea {
   .ghost-button {
     width: 100%;
     justify-content: center;
+    padding: 8px 12px;
   }
 
   .summary-grid {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 
   .content-grid {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 
   .history-list {
-    max-height: 300px;
+    max-height: 250px;
   }
 
   .history-item {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 11px;
+    padding: 8px;
   }
 
   .history-title {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .history-summary {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .section-head,
@@ -699,6 +727,22 @@ textarea {
   .flag-top {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 6px;
   }
+}
+
+/* ========== 上传按钮样式 ========== */
+.file-upload {
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.file-upload input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }

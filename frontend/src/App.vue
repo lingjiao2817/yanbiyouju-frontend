@@ -23,6 +23,7 @@ const error = ref("");
 const history = ref([]);
 const currentRecord = ref(null);
 const showBackTop = ref(false);
+const fileInput = ref(null);
 
 const categoryNames = {
   citation: "文献引用",
@@ -229,6 +230,48 @@ function createNewCheck() {
   currentRecord.value = null;
   error.value = "";
 }
+
+// 文件上传处理
+function handleFileUpload(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const fileType = file.name.split('.').pop().toLowerCase();
+  const fileSize = file.size / 1024 / 1024; // MB
+
+  // 检查文件大小（限制 10MB）
+  if (fileSize > 10) {
+    alert('文件过大，请上传小于 10MB 的文件');
+    return;
+  }
+
+  // 处理纯文本文件
+  if (fileType === 'txt' || fileType === 'md') {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      form.value.text = e.target.result;
+      if (!form.value.title) {
+        form.value.title = file.name.replace(/\.[^/.]+$/, "");
+      }
+    };
+    reader.onerror = () => {
+      alert('文件读取失败，请重试');
+    };
+    reader.readAsText(file, 'UTF-8');
+    return;
+  }
+
+  // .docx 和 .pdf 暂不支持直接读取内容
+  if (fileType === 'docx' || fileType === 'pdf') {
+    alert(`暂不支持直接读取 ${fileType.toUpperCase()} 文件内容，请转换为 .txt 或 .md 格式后上传，或直接粘贴文本。\n\n文件名：${file.name}`);
+    if (!form.value.title) {
+      form.value.title = file.name.replace(/\.[^/.]+$/, "");
+    }
+    return;
+  }
+
+  alert('请上传 .txt、.md、.docx 或 .pdf 格式的文件');
+}
 </script>
 
 <template>
@@ -308,6 +351,17 @@ function createNewCheck() {
               <button class="ghost-button" type="button" @click="resetDemo">
                 载入示例
               </button>
+
+              <!-- 上传文件按钮 -->
+              <label class="ghost-button file-upload">
+                📁 上传文件
+                <input 
+                  type="file" 
+                  accept=".txt,.md,.docx,.pdf" 
+                  @change="handleFileUpload" 
+                  hidden 
+                />
+              </label>
 
               <button
                 class="primary-button"
