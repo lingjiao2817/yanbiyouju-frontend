@@ -1,0 +1,29 @@
+{
+  "version": "team-template-v1",
+  "fake_authors": [
+    "张宇恒",
+    "赵思远",
+    "林若溪"
+  ],
+  "fake_journals": [
+    "国际生成式人工智能研究学报",
+    "世界高校智能教育评论"
+  ],
+  "fake_publishers": [
+    "未来教育国际出版社"
+  ],
+  "suspicious_doi_patterns": [
+    "10\\.1234/[A-Z]{3,}-FAKE\\d+",
+    "10\\.9999/ai\\-paper\\-[0-9]{4}"
+  ],
+  "suspicious_phrases": [
+    "权威研究一致证明",
+    "已有学者普遍认为",
+    "内部调研显示"
+  ],
+  "suspicious_keywords": [
+    "待查",
+    "内部资料",
+    "未公开报告"
+  ]
+}
