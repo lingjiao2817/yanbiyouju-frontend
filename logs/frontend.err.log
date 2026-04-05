@@ -1,0 +1,46 @@
+[2m01:48:49[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m01:48:57[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m01:49:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m01:52:25[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m01:52:26[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m01:52:34[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m01:52:46[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m02:02:17[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m02:02:19[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m02:02:21[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m02:02:25[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m02:02:28[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m02:03:00[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m02:03:03[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+[2m11:08:02[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/checks[39m
+Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+^C^C

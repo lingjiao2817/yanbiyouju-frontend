@@ -1,0 +1,26 @@
+# ── 核心框架 ────────────────────────────────────
+Flask==3.0.3
+Flask-Cors==4.0.1
+
+# ── 文档解析 ────────────────────────────────────
+pypdf==5.4.0
+pypdfium2==5.6.0
+rapidocr-onnxruntime==1.4.4
+opencv-python==4.10.0.84
+
+# ── 数值计算 ────────────────────────────────────
+numpy==1.26.4
+
+# ── HTTP / 分词 ─────────────────────────────────
+requests==2.32.3
+jieba==0.42.1
+
+# ── 大模型 API（可选，按需安装） ─────────────────
+# 智谱 GLM-4-Flash（免费额度）：pip install zhipuai
+# zhipuai>=2.1.0
+
+# ── 困惑度检测（可选，约 400MB 模型） ────────────
+# 启用方式：pip install transformers torch
+# 然后设置环境变量 ENABLE_PERPLEXITY=1
+# transformers>=4.40.0
+# torch>=2.0.0

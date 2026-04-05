@@ -1,0 +1,103 @@
+/* body & 基础字体 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PingFang SC", "Roboto", "Inter", system-ui, -apple-system, sans-serif;
+  background: #f5f3ff;
+  margin: 0;
+  padding: 0;
+  color: #1e1b4b;
+}
+
+/* 最大宽度容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* 卡片通用样式 */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #eef2ff;
+}
+
+/* 按钮统一风格 */
+.btn-primary {
+  background-color: #6d28d9;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary:hover {
+  background-color: #7c3aed;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  border-radius: 40px;
+  padding: 8px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-outline:hover {
+  border-color: #6d28d9;
+  color: #6d28d9;
+}
+
+/* 风险标签 */
+.tag-high { 
+  background-color: #fee2e2; 
+  color: #b91c1c; 
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.tag-medium { 
+  background-color: #ffedd5; 
+  color: #b45309; 
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.tag-low { 
+  background-color: #dcfce7; 
+  color: #15803d; 
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Flex 布局工具类 */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-gap { gap: 24px; }
+.flex-wrap { flex-wrap: wrap; }
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .container { padding: 16px; }
+  .flex-gap { gap: 16px; }
+  .card { padding: 16px; }
+}

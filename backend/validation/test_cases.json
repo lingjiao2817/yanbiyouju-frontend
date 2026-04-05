@@ -1,0 +1,95 @@
+[
+  {
+    "id": "H-CIT-01",
+    "label": "文献造假（含精确数据）",
+    "text": "据《人工智能赋能高校思政教育研究》（李明，2024）指出，大学生使用生成式AI辅助完成课程作业的比例已达67%。",
+    "expected_overall_risk": "high",
+    "expected_claims": [
+      { "type": "citation",  "risk": "high" },
+      { "type": "statistic", "risk": "medium" }
+    ]
+  },
+  {
+    "id": "H-CIT-02",
+    "label": "多处文献堆砌",
+    "text": "根据《数字素养与AI伦理教育》（王芳，2023）的研究结论，以及《高校课程诚信报告》（张明，2024）的调查，超过83%的高校学生承认曾使用AI代写作业，这一数字远超国际平均水平的45%。",
+    "expected_overall_risk": "high",
+    "expected_claims": [
+      { "type": "citation",  "risk": "high" },
+      { "type": "citation",  "risk": "high" },
+      { "type": "statistic", "risk": "medium" },
+      { "type": "statistic", "risk": "medium" }
+    ]
+  },
+  {
+    "id": "H-LAW-01",
+    "label": "法条造假（条例不存在）",
+    "text": "《教育数字化促进条例》第12条明确规定，所有高校必须在课程论文中披露AI使用痕迹，否则将被处以警告并暂停学位授予资格。",
+    "expected_overall_risk": "high",
+    "expected_claims": [
+      { "type": "legal", "risk": "high" },
+      { "type": "legal", "risk": "high" }
+    ]
+  },
+  {
+    "id": "H-LAW-02",
+    "label": "法条造假（条款内容捏造）",
+    "text": "《中华人民共和国学位法》草案第25条规定，使用AI代写论文者将被撤销学位申请资格，且三年内不得重新申请。该草案已于2024年3月由全国人大常委会审议通过。",
+    "expected_overall_risk": "high",
+    "expected_claims": [
+      { "type": "legal", "risk": "high" },
+      { "type": "legal", "risk": "high" }
+    ]
+  },
+  {
+    "id": "H-MIX-01",
+    "label": "文献+法条+数据混合造假",
+    "text": "据《人工智能与学术诚信》（陈静，2024）研究显示，国内已有超过72%的高校建立了AI检测机制。《高等学校预防与处理学术不端行为办法》第15条规定，学生使用AI生成论文内容而未加标注的，学校可以给予开除学籍处分。",
+    "expected_overall_risk": "high",
+    "expected_claims": [
+      { "type": "citation",  "risk": "high" },
+      { "type": "statistic", "risk": "medium" },
+      { "type": "legal",     "risk": "high" }
+    ]
+  },
+  {
+    "id": "M-AUTH-01",
+    "label": "专家观点存疑",
+    "text": "王磊教授认为，AI写作工具的普及已经对学术生态产生了深远影响，这一趋势在近五年内将持续加速。",
+    "expected_overall_risk": "medium",
+    "expected_claims": [
+      { "type": "authority", "risk": "medium" }
+    ]
+  },
+  {
+    "id": "M-STAT-01",
+    "label": "单独精确数据（无来源）",
+    "text": "目前全国高校中已有超过91%的教师表示曾在课堂上遇到AI辅助写作的学生作业，这一比例在2020年仅为12%。",
+    "expected_overall_risk": "medium",
+    "expected_claims": [
+      { "type": "statistic", "risk": "medium" },
+      { "type": "statistic", "risk": "medium" }
+    ]
+  },
+  {
+    "id": "N-001",
+    "label": "正常学术表达（无引用无数据）",
+    "text": "近年来，人工智能技术在教育领域的应用引发了广泛讨论。不同学者对此持有不同看法，学界尚未形成统一结论，仍需更多实证研究加以支撑。",
+    "expected_overall_risk": "low",
+    "expected_claims": []
+  },
+  {
+    "id": "N-002",
+    "label": "正常表达（合理模糊表述）",
+    "text": "有研究表明，学生在写作过程中借助工具的行为由来已久，从词典、翻译软件到今天的AI，工具本身的属性并不直接决定学术行为的性质。",
+    "expected_overall_risk": "low",
+    "expected_claims": []
+  },
+  {
+    "id": "N-003",
+    "label": "正常公式化写作（无造假声明）",
+    "text": "首先，人工智能技术正在深刻改变教育生态。其次，学术诚信问题随之受到更多关注。此外，高校的应对机制也在不断完善。综上所述，该领域的政策制定需要兼顾技术发展与伦理规范。",
+    "expected_overall_risk": "low",
+    "expected_claims": []
+  }
+]
